@@ -2,17 +2,22 @@
 //Question: What is the value of foo?
 var foo = 10 + '20';
 
+Ans:- Undefined
+
 //Question: What is the value of foo?
 var foo = 10 + 30 + '20';
+Ans:- Undefined
 
 var foo = 10*20+30;
+Ans:- Undefined
 
 //Question: What value is returned from the following statement?
 "i'm a lasagna hog".split("").reverse().join("");
+Ans :- goh angasal a m'i
 
 //Question: What is the value of window.foo?
 ( window.foo || ( window.foo = "bar" ) );
-
+Ans:- bar
 //Question: What is the outcome of the two alerts below?
   var foo = "Hello";
   (function() {
@@ -20,17 +25,19 @@ var foo = 10*20+30;
   alert(foo + bar);
   })();
   alert(foo + bar);
-
+Ans:- 1.Hello world
+      2.bar not defined
 
 //Question: What is the value of foo.length?
 var foo = [];
 foo.push(1);
 foo.push(2);
-
+Ans :- 2
 //Question: What is the value of foo.x?
 var foo = {n: 1};
 var bar = foo;
 foo.x = foo = {n: 2};
+Ans:- undefined
 
 //Question: What does the following code print?
 console.log('one');
@@ -39,7 +46,11 @@ setTimeout(function() {
 },0);
 console.log('three');
 console.log('three1');
-
+Ans:- one
+three
+three1
+undefined
+two
 
 //Question: What does the following code print ?
 
@@ -48,7 +59,8 @@ greet();
 function greet(){
 	console.log('Hello Gurdeep');
 }
-
+Ans: Hello Gurdeep
+     undefined
 //Question: What does the following code print ?
 
 nameLessFunction();
@@ -56,7 +68,7 @@ nameLessFunction();
 var nameLessFunction = function(){
 	console.log('Hello');
 }
-
+Ans: nameLessFunction not a function
 
 //And this one is the question that I would like you guys to think over and code : 
 //Question: How would you make this work? Write a add function which would work for both the below cases. 
